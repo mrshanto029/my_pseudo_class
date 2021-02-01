@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:khaki;
+        }
+        h1::before{
+            content:"Hello" ;
+            font-size: 16px;
+            color: aqua;
+        }
+        .special:hover{
+            color:indianred;
+            font-size: 50px;
+            background-color: pghtgreen;
+        }
+        .special::after{
+            content: " Bye";
+            font-size: 16px;
+            color:indigo;
+        }
+        input:focus{
+            font-weight: 700;
+            color:pme;
+            font-size: 15px;
+            background-color: maroon;
+        }
+        p:nth-child(2n+1)
+        {
+            background-color: mediumvioletred;
+        }
+        a:visited{
+            color: orange;
+            font-style: itapc;
+        }
+       body{
+            counter-reset: section;
+        }
+        p::before{
+            counter-increment: section;
+            content: "crush " counter(section)" : ";
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Pseudo Class</h1>
+    <h1>Normal Class</h1>
+    <h1 class="special">Formal Class</h1>
+    <input name="email" type="text">
+    <br><br>
+    <input name="password" type="text">
+    <button>Click</button>
+    <a href="https://www.facebook.com/profile.php?id=100019194485287">facebook</a>
+    <a href="https://www.youtube.com/">youtube</a>
+   
+    <p>al</p>
+    <p>bl</p>
+    <p>cl</p>
+    <p>dl</p>
+    <p>el</p>
+
+</body>
+</html>
